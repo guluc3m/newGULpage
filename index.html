@@ -17,7 +17,7 @@
 
 	<body>
 		<!--Desktop header with all the links. Hidden in mobile mode, full width in desktop mode-->
-		<header class=col-12>
+		<header class=row>
 			<!--Logo part of the header, leftmost div-->
 			<div class="col-2 header-logo">
 				<img alt="GUL UC3M Logo" src="img/logo_horizontal_gray.svg">
@@ -28,8 +28,6 @@
 			</div>
 			<!--Empty divs, for now they make up free space but they are available
 			for use if they are needed in the future as buttons-->
-			<div class="col-1">
-			</div>
 			<div class="col-1 header-button">
 					<a href="#">Android</a>
 			</div>
@@ -38,6 +36,9 @@
 			</div>
 			<div class="col-1 header-button">
 					<a href="#">Hack3rs</a>
+			</div>
+			<div class="col-1 header-button">
+					<a href="#">Juegos</a>
 			</div>
 			<div class="col-1 header-button">
 					<a href="#">MagIA</a>
@@ -49,6 +50,23 @@
 					<a href="#">Contacto</a>
 			</div>
 		</header>
-		Hello world!
+		
+		<!--Padding column so the content is not directly next to the border of the page-->
+		<div class="col-1 pad"></div>
+
+		<!--Left section of the document, with timetables and contact info-->
+		<div class="col-3 section">
+			<div class="card-dark">Horarios</div>
+			<div class=card>
+				<p><b>Android</b>: viernes, 19h a 20h</p>
+				<p><b>Arduino</b>: viernes, 19h a 20h</p>
+				<p><b>Hack3rs</b>: viernes, 19h a 20h</p>
+				<p><b>Juegos</b>: viernes, 19h a 20h</p>
+				<p><b>MagIA</b>: viernes, 19h a 20h</p>
+			</div>
+		</div>
+		<div class="col-7 section"></div>
+		<!--Padding column so the content is not directly next to the border of the page-->
+		<div class="col-1 pad"></div>
 	</body>
 </html>

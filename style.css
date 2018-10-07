@@ -29,12 +29,10 @@ html {
     box-sizing: border-box;
 }
 
-/*General CSS rule for all col elements so it works nicely*/
-[class*="col-"] {float: left;}
-
 /*Responsive column design, mobile first. Mobile phones have everything to 100% width. See how this
 genius stuff works at https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 [class*="col-"] {
+    float: left;
     width: 100%;
 }
 
@@ -54,6 +52,12 @@ genius stuff works at https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
     .col-12 {width: 100%;}
 }
 
+/*Row rules*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 /*###########################################
 ##                   BODY                  ##
@@ -65,23 +69,40 @@ body {
     font-family: 'Lato', sans-serif;
     /*Set the background color to lighter gray*/
     background-size: cover;
-    background-color: #F9F9F9;
+    background-color: #666;
     margin: 0%;
 }
 
 /*Deactivate underscoring on all links*/
 a {text-decoration: none;}
 
+/*Body padding so the left and right sections are not directly next to the borders*/
+.pad {height: 1em;}
+
 
 /*###########################################
 ##                  HEADER                 ##
 ###########################################*/
 
-/*If we are on mobile, hide the header buttons*/
-@media only screen and (max-width: 768px) {header-button {display: none;}}
+/*If we are on mobile, do some stuff*/
+@media only screen and (max-width: 768px) {
+    /*Hide the header buttons*/
+    .header-button {display: none;}
+    /*Reduce the size of the header*/
+    header {height: 3em;}
+    /*And reduce the size of the logo so it fits*/
+    .header-logo img {height: 2em;}
+}
+
+/*Set the header as a floating item only if we are in desktop mode*/
+@media only screen and (min-width: 768px) {
+    position: fixed;
+    top: 0px;
+}
 
 /*Main header block. This sets the background color and the coverage of the header*/
 header {
+    /*Set the background to cover so it fills the whole div*/
     background-size: cover;
     /*The background color in the header will be that light gray so we can tell the
     difference with the body background*/
@@ -109,6 +130,9 @@ header div {
     margin-left: 1em;
 }
 
+/*Hide the motto if we are on mobile*/
+@media only screen and (max-width: 768px) {.header-motto p {display: none;}}
+
 /*Nos gusta jugar con la tecnologia*/
 .header-motto p {
     /*Set a smaller font size*/
@@ -123,8 +147,6 @@ header div {
     color: #666;
 }
 
-
-
 /*Header buttons, with hover action too*/
 .header-button {
     /*Used for the next two lines*/
@@ -135,14 +157,14 @@ header div {
     justify-content: center;
 }
 
+/*Header button link text, basically set a nice color*/
 .header-button a {
     text-decoration: none;
     color: #222;
 }
 
-.header-button:hover {
-    background-color: #DDD;
-}
+/*Header button, change its color when hovering with the mouse*/
+.header-button:hover {background-color: #DDD;}
 
 /*Special contact button*/
 .header-contact {
@@ -160,8 +182,67 @@ header div {
 /*Contact button text, set a light color*/
 .header-contact a {color: #EAEAEA;}
 
-/*Contact button hover, since the bg color is different,
-the hover color is too*/
-.header-contact:hover {
-    background-color: #0A0A0A;
+/*Contact button hover, since the bg color is different, the hover color is too*/
+.header-contact:hover {background-color: #0A0A0A;}
+
+
+/*###########################################
+##                 SECTION                 ##
+###########################################*/
+
+.section {
+    /*A bit of padding so the cards do not collide between them horizontally*/
+    padding: 0.5em;
+    /*A top margin so it does not collide with the header*/
+    margin-top: 1em;
+    /*Testing background
+    background-size: cover;
+    background-color: #F00;
+    height: 100em;*/
+}
+
+
+/*Card item, basic building block of the body*/
+
+.card-dark {
+    /*Set the card color, border radius and display mode*/
+    background-color: #222;
+    color: #F9F9F9;
+    border-radius: 2px;
+    display: inline-block;
+    /*Full width of the section, although this can be changed individually*/
+    width: 100%;
+    /*A bit of content padding so it looks great*/
+    padding: 0.5em;
+    /*And vertical margin so cards in the same section do not collide*/
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    /*Box shadow!*/
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card {
+    /*Set the card color, border radius and display mode*/
+    background: #EAEAEA;
+    border-radius: 2px;
+    display: inline-block;
+    /*Full width of the section, although this can be changed individually*/
+    width: 100%;
+    /*A bit of content padding so it looks great*/
+    padding: 0.5em;
+    /*And vertical margin so cards in the same section do not collide*/
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    /*Box shadow!*/
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/*Text that is inside a p is smaller, so we use text that is not inside the p
+as headers*/
+.card p {
+    /*Smaller font size*/
+    font-size: 0.8em;
+    /*And a bit of lateral padding*/
+    padding-left: 0.3em;
+    padding-right: 0.3em;
 }

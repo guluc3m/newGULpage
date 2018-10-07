@@ -1,3 +1,8 @@
+### TODO
+```
+- Media queries do not work :(
+```
+
 # The new GUL webpage
 Static, simple and following the [material design guidelines](https://material.io/) as much as possible (taking into account we are engineers, not designers).
 
@@ -23,7 +28,6 @@ column-2 {
 
 Big sections are divided by big banners which have a top margin of 2 lines and bottom
 margin of one line, like this:
-
 ```css
 /*Header with a width of 100%...*/
 header {
@@ -45,13 +49,28 @@ column-2 {
 ...
 ```
 
+One liners are allowed although only for setting one attribute:
+```css
+/*Deactivate underscoring on all links*/
+a {text-decoration: none;}
+```
+
+
 # Design
+
+## Font
+
+The official GUL UC3M font for the logo and most of the printing is done with [Lato](https://fonts.google.com/specimen/Lato), and this page is no exception.
 
 ## Color palette
 
 This is the color palette used in the whole page. You can find the hexadecimal values of each one at the beginning of [style.css](style.css)
 
 ![GUL color palette image. From left to right: Hack3rs Red, Radio Blue, Dark gray, GUL Gray, Light gray and Lighter gray](etc/gul_palette.png)
+
+## Cards
+
+Almost everything in the page is based on cards. They are a simple way of ordering information in blocks and keeping everything tidy.
 
 ## Shadows
 
