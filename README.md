@@ -52,3 +52,7 @@ column-2 {
 This is the color palette used in the whole page. You can find the hexadecimal values of each one at the beginning of [style.css](style.css)
 
 ![GUL color palette image. From left to right: Hack3rs Red, Radio Blue, Dark gray, GUL Gray, Light gray and Lighter gray](etc/gul_palette.png)
+
+## Shadows
+
+Thanks to Samuel Thornton, the author of [this Codepen](https://codepen.io/sdthornton/pen/wBZdXq) for the CSS shadow code which really adds for the Material Design experience.

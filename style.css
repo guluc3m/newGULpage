@@ -70,9 +70,8 @@ body {
 }
 
 /*Deactivate underscoring on all links*/
-a {
-    text-decoration: none;
-}
+a {text-decoration: none;}
+
 
 /*###########################################
 ##                  HEADER                 ##
@@ -87,7 +86,11 @@ header {
     /*The background color in the header will be that light gray so we can tell the
     difference with the body background*/
     background-color: #EAEAEA;
+    /*Fixed height relative to the font size. If you change this be aware that the header
+    buttons and probably other elements' heights will have to be changed too*/
     height: 4em;
+    /*Block shadow. This corresponds to card-2 in the Codepen*/
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 /*Make the blocks inside the header have the same height as the header so nothing gets out*/
@@ -102,13 +105,14 @@ header div {
 /*Holds the logo image in place*/
 .header-logo img {
     display: block;
-    vertical-align: middle;
     height: 3em;
     margin-left: 1em;
 }
 
 /*Nos gusta jugar con la tecnologia*/
 .header-motto p {
+    /*Set a smaller font size*/
+    font-size: 0.8em;
     /*Used for the next two lines*/
     display: flex;
     /*Align the paragraph vertically*/
@@ -131,7 +135,7 @@ header div {
     justify-content: center;
 }
 
-.header-button p {
+.header-button a {
     text-decoration: none;
     color: #222;
 }
@@ -150,10 +154,14 @@ header div {
     justify-content: center;
     /*Set dark colors*/
     background-color: #222;
-    text-decoration: none;
-    color: #EAEAEA;
+
 }
 
+/*Contact button text, set a light color*/
+.header-contact a {color: #EAEAEA;}
+
+/*Contact button hover, since the bg color is different,
+the hover color is too*/
 .header-contact:hover {
-    background-color: #666;
+    background-color: #0A0A0A;
 }
