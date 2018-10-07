@@ -15,10 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="gul_pallete.svg"
-   inkscape:export-filename="C:\Users\Jorge\Desktop\gul_pallette.png"
-   inkscape:export-xdpi="100"
-   inkscape:export-ydpi="100">
+   sodipodi:docname="gul_palette.svg"
+   inkscape:export-filename="D:\Repos\newGULpage\etc\gul_palette.png"
+   inkscape:export-xdpi="50"
+   inkscape:export-ydpi="50">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -75,7 +75,7 @@
        x="40.892239"
        y="39.352177" />
     <rect
-       style="fill:#cbcbcb;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:10.58333302;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:#eaeaea;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:10.58333302;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect815-0-9"
        width="35.814117"
        height="103.16604"

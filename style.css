@@ -7,15 +7,15 @@
     - Radio Blue:   #39A5DB
     - Dark gray:    #222
     - GUL Gray:     #666
-    - Light gray:   #CBCBCB
+    - Light gray:   #EAEAEA
     - Lighter gray: #F9F9F9
     
 Please when using them type the name in a comment close to it
 so in case we have to substitute them all we can do a search.
 
-/*General CSS rules for the whole document*/
+/*General CSS rules for the whole document
 html {
-}
+}*/
 
 /*General CSS rules for each item on the document, do not mistake with the previous one*/
 * {
@@ -65,33 +65,95 @@ body {
     font-family: 'Lato', sans-serif;
     /*Set the background color to lighter gray*/
     background-size: cover;
-    background-color: #F9F9F9
+    background-color: #F9F9F9;
+    margin: 0%;
 }
 
+/*Deactivate underscoring on all links*/
+a {
+    text-decoration: none;
+}
 
 /*###########################################
 ##                  HEADER                 ##
 ###########################################*/
 
-/*If we are on mobile, hide the header*/
-@media only screen and (min-width: 768px) {display: none;}
+/*If we are on mobile, hide the header buttons*/
+@media only screen and (max-width: 768px) {header-button {display: none;}}
 
 /*Main header block. This sets the background color and the coverage of the header*/
 header {
     background-size: cover;
     /*The background color in the header will be that light gray so we can tell the
     difference with the body background*/
-    background-color: #CBCBCB;
+    background-color: #EAEAEA;
+    height: 4em;
+}
+
+/*Make the blocks inside the header have the same height as the header so nothing gets out*/
+header div {
+    height: inherit;
+    display: flex;
+    align-items: center;
 }
 
 /*The structure from here on is: 2 units for the logo, 4 for the motto, and 6 for buttons
 
 /*Holds the logo image in place*/
-header-logo {
-
+.header-logo img {
+    display: block;
+    vertical-align: middle;
+    height: 3em;
+    margin-left: 1em;
 }
 
 /*Nos gusta jugar con la tecnologia*/
-header-motto {
+.header-motto p {
+    /*Used for the next two lines*/
+    display: flex;
+    /*Align the paragraph vertically*/
+    align-items: center;
+    /*Align it horizontally*/
+    align-items: center;
+    /*Set a lighter color*/
+    color: #666;
+}
 
+
+
+/*Header buttons, with hover action too*/
+.header-button {
+    /*Used for the next two lines*/
+    display: flex;
+    /*Align the paragraph vertically*/
+    align-items: center;
+    /*Align it horizontally*/
+    justify-content: center;
+}
+
+.header-button p {
+    text-decoration: none;
+    color: #222;
+}
+
+.header-button:hover {
+    background-color: #DDD;
+}
+
+/*Special contact button*/
+.header-contact {
+    /*Used for the next two lines*/
+    display: flex;
+    /*Align the paragraph vertically*/
+    align-items: center;
+    /*Align it horizontally*/
+    justify-content: center;
+    /*Set dark colors*/
+    background-color: #222;
+    text-decoration: none;
+    color: #EAEAEA;
+}
+
+.header-contact:hover {
+    background-color: #666;
 }
