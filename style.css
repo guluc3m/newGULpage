@@ -7,7 +7,7 @@
     - Radio Blue:   #39A5DB
     - Dark gray:    #222
     - GUL Gray:     #666
-    - Light gray:   #cbcbcb
+    - Light gray:   #CBCBCB
     - Lighter gray: #F9F9F9
     
 Please when using them type the name in a comment close to it
@@ -29,7 +29,10 @@ html {
     box-sizing: border-box;
 }
 
-/*Responsive column design. Mobile phones have everything to 100% width. See how this
+/*General CSS rule for all col elements so it works nicely*/
+[class*="col-"] {float: left;}
+
+/*Responsive column design, mobile first. Mobile phones have everything to 100% width. See how this
 genius stuff works at https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 [class*="col-"] {
     width: 100%;
@@ -70,7 +73,25 @@ body {
 ##                  HEADER                 ##
 ###########################################*/
 
+/*If we are on mobile, hide the header*/
+@media only screen and (min-width: 768px) {display: none;}
+
+/*Main header block. This sets the background color and the coverage of the header*/
 header {
     background-size: cover;
-    background-color: 
+    /*The background color in the header will be that light gray so we can tell the
+    difference with the body background*/
+    background-color: #CBCBCB;
+}
+
+/*The structure from here on is: 2 units for the logo, 4 for the motto, and 6 for buttons
+
+/*Holds the logo image in place*/
+header-logo {
+
+}
+
+/*Nos gusta jugar con la tecnologia*/
+header-motto {
+
 }

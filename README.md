@@ -3,15 +3,21 @@ Static, simple and following the [material design guidelines](https://material.i
 
 In each folder there is a README.md file with a bit of information about its contents, TODO notes, and other stuff.
 
-# style.css structure
-Individual classes are divided by one blank line, and the bracket position is:
+# style.css coding style guide
+Each class is a solid block: No space between the name of the class and its attributes,
+nor between attributes and comments. Individual classes are divided by one blank line, and the bracket position is always the same. Here are some examples:
 ```css
 header {
+    /*Background color*/
     background-color: red;
+    background-size: cover;
+    /*Set the width to half*/
+    width: 50%;
 }
 
 column-2 {
     text-size: big;
+    text-align: center;
 }
 ```
 
@@ -25,6 +31,7 @@ header {
     ...
 }
 ...
+
 
 /*###########################################
 ##                 COLUMNS                 ##
