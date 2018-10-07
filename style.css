@@ -1,0 +1,67 @@
+/*###########################################
+##              GENERAL STUFF              ##
+###########################################*/
+
+/*These are the colors we are using in the document:
+    - Hack3rs Red:  #591728
+    - Radio Blue:   #39A5DB
+    - Dark gray:    #222
+    - GUL Gray:     #666
+    - Light gray:   #cbcbcb
+    - Lighter gray: #F9F9F9
+    
+Please when using them type the name in a comment close to it
+so in case we have to substitute them all we can do a search.
+
+/*General CSS rules for the whole document*/
+html {
+}
+
+/*General CSS rules for each item on the document, do not mistake with the previous one*/
+* {
+    /*This bad boy right here allows us to set the absolute width of an element, including
+    the margins, when changing the width attribute. If this is not here, then we have to take
+    into account the margin of an element when setting its width manually. For example, if you
+    want to set two elements side by side with 1em of margin, using this tag we can set 30% and 70%
+    width respectively, and it will work. Without it, we have to play with the widths until it
+    works (probably setting them at 26% and 68% or similar), and that sucks. It is better explained
+    here: https://www.w3schools.com/css/css3_box-sizing.asp */
+    box-sizing: border-box;
+}
+
+/*Body rules, applied for all viewport sizes*/
+body {
+    /*Set the font family to Lato, and use Sans Serif as fallback*/
+    font-family: 'Lato', sans-serif;
+}
+
+/*Responsive column design. Mobile phones have everything to 100% width. See how this
+genius stuff works at https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+[class*="col-"] {
+    width: 100%;
+}
+
+/*With a width bigger than 768px we go to desktop mode*/
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+/*###########################################
+##                 HEADER                  ##
+###########################################*/
+header {
+    background-size: cover;
+    background-color: 
+}
