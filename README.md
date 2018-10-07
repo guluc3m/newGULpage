@@ -5,8 +5,8 @@ In each folder there is a README.md file with a bit of information about its con
 
 # Design
 
-## Color pallette
+## Color palette
 
-This is the color pallette used in the whole page. You can find the hexadecimal values of each one at the beginning of [style.css](style.css)
+This is the color palette used in the whole page. You can find the hexadecimal values of each one at the beginning of [style.css](style.css)
 
-![GUL color pallete image. From left to right: Hack3rs Red, Radio Blue, Dark gray, GUL Gray, Light gray and Lighter gray](etc/gul_pallete.png)
+![GUL color palette image. From left to right: Hack3rs Red, Radio Blue, Dark gray, GUL Gray, Light gray and Lighter gray](etc/gul_palette.png)
