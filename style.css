@@ -29,12 +29,6 @@ html {
     box-sizing: border-box;
 }
 
-/*Body rules, applied for all viewport sizes*/
-body {
-    /*Set the font family to Lato, and use Sans Serif as fallback*/
-    font-family: 'Lato', sans-serif;
-}
-
 /*Responsive column design. Mobile phones have everything to 100% width. See how this
 genius stuff works at https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 [class*="col-"] {
@@ -59,8 +53,23 @@ genius stuff works at https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 
 
 /*###########################################
-##                 HEADER                  ##
+##                   BODY                  ##
 ###########################################*/
+
+/*Body rules, applied for all viewport sizes*/
+body {
+    /*Set the font family to Lato, and use Sans Serif as fallback*/
+    font-family: 'Lato', sans-serif;
+    /*Set the background color to lighter gray*/
+    background-size: cover;
+    background-color: #F9F9F9
+}
+
+
+/*###########################################
+##                  HEADER                 ##
+###########################################*/
+
 header {
     background-size: cover;
     background-color: 
