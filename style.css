@@ -14,9 +14,6 @@
 Please when using them type the name in a comment close to it
 so in case we have to substitute them all we can do a search.
 
-/*General CSS rules for the whole document
-html {
-}*/
 
 /*General CSS rules for each item on the document, do not mistake with the previous one*/
 * {
@@ -37,8 +34,16 @@ genius stuff works at https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
     width: 100%;
 }
 
+/*Row rules*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 /*With a width bigger than 768px we go to desktop mode*/
 @media only screen and (min-width: 768px) {
+    [class*="col-"] {float: left;}
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -51,13 +56,6 @@ genius stuff works at https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-}
-
-/*Row rules*/
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 /*Make images fit on their correspondent div*/
