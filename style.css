@@ -70,7 +70,7 @@ body {
     font-family: 'Lato', sans-serif;
     /*Set the background color to lighter gray*/
     background-size: cover;
-    background-color: #1C3144;
+    background-color: #DDD;
     /*Remove the default margins*/
     margin: 0%;
     /*Set a bigger font size by default*/
@@ -229,7 +229,7 @@ header div {
 /*Dark card*/
 .card-dark {
     /*Set the card color, border radius and display mode*/
-    background-color: #222;
+    background-color: #111;
     color: #F9F9F9;
     border-radius: 2px;
     display: inline-block;
@@ -248,6 +248,29 @@ header div {
 
 /*Set the link color to a lighter one so we can see it*/
 .card-dark a {color: #EAEAEA;}
+
+/*Dark card*/
+.card-lighter {
+    /*Set the card color, border radius and display mode*/
+    background-color: #DDD;
+    color: #111;
+    border-radius: 2px;
+    display: inline-block;
+    /*Full width of the section, although this can be changed individually*/
+    width: 100%;
+    /*A bit of content padding so it looks great*/
+    padding: 0.5em 1em 0.5em 1em;
+    /*And vertical margin so cards in the same section do not collide*/
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    /*Box shadow!*/
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    /*Set the text bigger*/
+    font-size: 1.2em;
+}
+
+/*Set the link color to a lighter one so we can see it*/
+.card-dark a {color: #222;}
 
 /*Blue card*/
 .card-blue {

@@ -1,7 +1,7 @@
 ### TODO
 ```
 - Media queries do not work :(
-- Coloured cards
+- Colored cards
 ```
 
 # The new GUL webpage
