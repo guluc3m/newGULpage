@@ -1,3 +1,9 @@
+## How this repo works
+ - Please be civil and don't fuck stuff up in the master branch.
+ - Master branch is for index.html and contact.html pages. Everything outside those
+   should be in their own branches or forks so we keep the core of the page working
+   and clean, and the design is more modular.
+
 ### TODO
 ```
 - Media queries do not work :(

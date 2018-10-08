@@ -61,7 +61,8 @@ genius stuff works at https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 }
 
 /*Make images fit on their correspondent div*/
-img {
+.section img {
+    /*Set the width to the whole container*/
     width: 100%;
 }
 
