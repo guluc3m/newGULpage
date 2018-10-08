@@ -5,6 +5,7 @@
 /*These are the colors we are using in the document:
     - Hack3rs Red:  #591728
     - Radio Blue:   #39A5DB
+    - GUL Blue:     #1C3144
     - Dark gray:    #222
     - GUL Gray:     #666
     - Light gray:   #EAEAEA
@@ -69,8 +70,11 @@ body {
     font-family: 'Lato', sans-serif;
     /*Set the background color to lighter gray*/
     background-size: cover;
-    background-color: #666;
+    background-color: #1C3144;
+    /*Remove the default margins*/
     margin: 0%;
+    /*Set a bigger font size by default*/
+    font-size: 18px;
 }
 
 /*Deactivate underscoring on all links*/
@@ -203,24 +207,6 @@ header div {
 
 
 /*Card item, basic building block of the body*/
-
-.card-dark {
-    /*Set the card color, border radius and display mode*/
-    background-color: #222;
-    color: #F9F9F9;
-    border-radius: 2px;
-    display: inline-block;
-    /*Full width of the section, although this can be changed individually*/
-    width: 100%;
-    /*A bit of content padding so it looks great*/
-    padding: 0.5em;
-    /*And vertical margin so cards in the same section do not collide*/
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-    /*Box shadow!*/
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
 .card {
     /*Set the card color, border radius and display mode*/
     background: #EAEAEA;
@@ -237,12 +223,66 @@ header div {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-/*Text that is inside a p is smaller, so we use text that is not inside the p
+/*Set the link color to a lighter one so we can see it*/
+.card a {color: #222;}
+
+/*Dark card*/
+.card-dark {
+    /*Set the card color, border radius and display mode*/
+    background-color: #222;
+    color: #F9F9F9;
+    border-radius: 2px;
+    display: inline-block;
+    /*Full width of the section, although this can be changed individually*/
+    width: 100%;
+    /*A bit of content padding so it looks great*/
+    padding: 0.5em 1em 0.5em 1em;
+    /*And vertical margin so cards in the same section do not collide*/
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    /*Box shadow!*/
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    /*Set the text bigger*/
+    font-size: 1.2em;
+}
+
+/*Set the link color to a lighter one so we can see it*/
+.card-dark a {color: #EAEAEA;}
+
+/*Blue card*/
+.card-blue {
+    /*Set the card color, border radius and display mode*/
+    background-color: #1C3144;
+    color: #F9F9F9;
+    border-radius: 2px;
+    display: inline-block;
+    /*Full width of the section, although this can be changed individually*/
+    width: 100%;
+    /*A bit of content padding so it looks great*/
+    padding: 0.5em 1em 0.5em 1em;
+    /*And vertical margin so cards in the same section do not collide*/
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    /*Box shadow!*/
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    /*Set the text bigger*/
+    font-size: 1.2em;
+}
+
+/*Set the link color to a lighter one so we can see it*/
+.card-blue a {color: #EAEAEA;}
+
+/*Text that is inside a p is a bit bigger, so we use text that is not inside the p
 as headers*/
 .card p {
     /*Smaller font size*/
-    font-size: 0.8em;
+    font-size: 1.1em;
     /*And a bit of lateral padding*/
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+/*Titles for big dark cards, use a lighter font so it does not look ugly af*/
+h2 {
+    font-weight: lighter;
 }

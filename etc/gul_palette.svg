@@ -9,16 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="214.8847mm"
+   width="250.69882mm"
    height="103.16605mm"
-   viewBox="0 0 214.8847 103.16603"
+   viewBox="0 0 250.69882 103.16602"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="gul_palette.svg"
    inkscape:export-filename="D:\Repos\newGULpage\etc\gul_palette.png"
-   inkscape:export-xdpi="50"
-   inkscape:export-ydpi="50">
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="37.125603"
-     inkscape:cy="244.56706"
+     inkscape:cx="89.900239"
+     inkscape:cy="160.72809"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -59,7 +59,7 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(66.55011,-39.352177)">
+     transform="translate(102.36423,-39.352177)">
     <rect
        style="fill:#222222;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:10.58333302;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect815"
@@ -93,14 +93,21 @@
        id="rect815-0-9-5-9"
        width="35.814117"
        height="103.16604"
-       x="-30.735996"
-       y="39.35218" />
+       x="-102.36423"
+       y="39.352177" />
     <rect
        style="fill:#39a5db;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:10.58333302;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect815-0-9-5-9-8"
        width="35.814117"
        height="103.16604"
        x="-66.55011"
-       y="39.35218" />
+       y="39.352177" />
+    <rect
+       style="fill:#1c3144;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:10.58333302;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect815-0-9-5-9-8-5"
+       width="35.814117"
+       height="103.16604"
+       x="-30.735996"
+       y="39.352177" />
   </g>
 </svg>
