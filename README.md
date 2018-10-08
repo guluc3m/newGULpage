@@ -9,7 +9,7 @@ Static, simple and following the [material design guidelines](https://material.i
 
 In each folder there is a README.md file with a bit of information about its contents, TODO notes, and other stuff.
 
-You can see a preview of the page (here)[https://jorgeelalto.github.io/newGULpage/]. Note that it is updated along with the master branch of this repo.
+You can see a preview of the page [here](https://jorgeelalto.github.io/newGULpage/). Note that it is updated along with the master branch of this repo.
 
 # style.css coding style guide
 Each class is a solid block: No space between the name of the class and its attributes,
