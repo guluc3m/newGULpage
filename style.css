@@ -151,6 +151,19 @@ header div {
     color: #666;
 }
 
+/*Header icons, but we can use this on other places too*/
+.icon {
+    /*Set a nice width for it to work well with nearby text*/
+    width: 1.5em;
+    /*Margins for separation*/
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    /*And a dirty hack so it gets a lighter gray tone*/
+    opacity: 0.6;
+    /*inline block so it gets centered*/
+    display: inline-block;
+}
+
 /*Header buttons, with hover action too*/
 .header-button {
     /*Used for the next two lines*/

@@ -9,6 +9,8 @@ Static, simple and following the [material design guidelines](https://material.i
 
 In each folder there is a README.md file with a bit of information about its contents, TODO notes, and other stuff.
 
+You can see a preview of the page (here)[https://jorgeelalto.github.io/newGULpage/]. Note that it is updated along with the master branch of this repo.
+
 # style.css coding style guide
 Each class is a solid block: No space between the name of the class and its attributes,
 nor between attributes and comments. Individual classes are divided by one blank line, and the bracket position is always the same. Here are some examples:
@@ -67,11 +69,15 @@ The official GUL UC3M font for the logo and most of the printing is done with [L
 
 This is the color palette used in the whole page. You can find the hexadecimal values of each one at the beginning of [style.css](style.css)
 
-![GUL color palette image. From left to right: Hack3rs Red, Radio Blue, Dark gray, GUL Gray, Light gray and Lighter gray](etc/gul_palette.png)
+![GUL color palette image. From left to right: Hack3rs Red, Radio Blue, GUL Blue, Dark gray, GUL Gray, Light gray and Lighter gray](etc/gul_palette.png)
 
 ## Cards
 
-Almost everything in the page is based on cards. They are a simple way of ordering information in blocks and keeping everything tidy.
+Almost everything in the page is based on cards. They are a simple way of ordering information in blocks and keeping everything tidy. For now there are three types of cards:
+ - card: black text on white background
+ - card-dark: white text on black background
+ - card-lighter: dark gray text on light gray background
+ - card-blue: white text on GUL Blue background
 
 ## Shadows
 
