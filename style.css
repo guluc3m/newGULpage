@@ -60,6 +60,11 @@ genius stuff works at https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
     display: table;
 }
 
+/*Make images fit on their correspondent div*/
+img {
+    width: 100%;
+}
+
 /*###########################################
 ##                   BODY                  ##
 ###########################################*/
