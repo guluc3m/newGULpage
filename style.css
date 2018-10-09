@@ -151,6 +151,7 @@ header div {
     align-items: center;
     /*Align it horizontally*/
     align-items: center;
+
     /*Set a lighter color*/
     color: #666;
 }
@@ -186,25 +187,6 @@ header div {
 
 /*Header button, change its color when hovering with the mouse*/
 .header-button:hover {background-color: #DDD;}
-
-/*Special contact button*/
-.header-contact {
-    /*Used for the next two lines*/
-    display: flex;
-    /*Align the paragraph vertically*/
-    align-items: center;
-    /*Align it horizontally*/
-    justify-content: center;
-    /*Set dark colors*/
-    background-color: #222;
-
-}
-
-/*Contact button text, set a light color*/
-.header-contact a {color: #EAEAEA;}
-
-/*Contact button hover, since the bg color is different, the hover color is too*/
-.header-contact:hover {background-color: #0A0A0A;}
 
 
 /*###########################################

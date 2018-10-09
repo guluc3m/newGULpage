@@ -5,7 +5,7 @@
                 <meta charset="UTF-8">
                 <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
                 <!--Tag needed to make the webpage responsive, see https://www.w3schools.com/css/css_rwd_viewport.asp for details-->
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <!--With this link we load the Lato font family needed for the page-->
                 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
                 <!--Use our main stylesheet too-->
@@ -20,10 +20,7 @@
                 <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
                 <meta name="msapplication-TileColor" content="#da532c">
                 <meta name="theme-color" content="#1c3144">
-
-
         </head>
-
 
         <body>
                 <!--Desktop header with all the links. Hidden in mobile mode, full width in desktop mode-->
@@ -39,6 +36,8 @@
                                 <a href="https://github.com/guluc3m"><img class=icon src=img/icons/github.svg></a>
                                 <a href="https://cursos.gul.es/"><img class=icon src=img/icons/graduation-cap.svg></a>
                         </div>
+                        <!--Empty class-->
+                        <div class="col-1 header-button"></div>
                         <!--Links to other main pages-->
                         <div class="col-1 header-button">
                                         <a href="#">Android</a>
@@ -57,9 +56,6 @@
                         </div>
                         <div class="col-1 header-button">
                                         <a href="#">Radio</a>
-                        </div>
-                        <div class="col-1 header-contact">
-                                        <a href="#">Contacto</a>
                         </div>
                 </header>
 
@@ -100,9 +96,22 @@
                         <div class="card-blue"><h3>Contacto</h3></div>
                         <div class=card><p>Puedes entrar en contacto con nosotros vía correo electrónico o a través de 
                                 una de nuestras redes sociales.</p>
-                                <div class="col-6 card-lighter">Twitter</div>
-                                <div class="col-6 card-lighter">Instagram</div>
+                                <div class=row>
+                                    <!--Twitter and instagram buttons yet again-->
+                                    <a href="https://twitter.com/guluc3m"><div class="col-6 card-lighter">Twitter</div></a>
+                                    <a href="https://www.instagram.com/guluc3m/"><div class="col-6 card-lighter">Instagram</div></a>
+                                </div>
                         </div>
+                        <!--Email address form for mailing list-->
+                        <div class=card-blue>Lista de correo</div>
+                        <div class=card>
+                            <p>Puedes apuntarte a la lista de correo para recibir avisos de reuniones y eventos, participar en discusiones
+                            y preguntar dudas a nuestra comunidad:</p>
+                            <div class=form>
+                                <input name=email type=address class=formbox-small placeholder="Correo electrónico">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!--Padding column so the content is not directly next to the border of the page-->
                 <div class="col-1 pad"></div>
