@@ -3,6 +3,7 @@
  - Master branch is for index.html and contact.html pages. Everything outside those
    should be in their own branches or forks so we keep the core of the page working
    and clean, and the design is more modular.
+ - USE 4 SPACES, NO TABS! If I see a document that uses tabs I will probably do a retab.
 
 ### TODO
 ```
