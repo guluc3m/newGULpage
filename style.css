@@ -74,7 +74,9 @@ body {
     font-family: 'Lato', sans-serif;
     /*Set the background color to lighter gray*/
     background-size: cover;
-    background-color: #DDD;
+    background-color: #000;
+    /*
+    background-color: #DDD;*/
     /*Remove the default margins*/
     margin: 0%;
     /*Set a bigger font size by default*/
