@@ -10,7 +10,7 @@
     - GUL Gray:     #666
     - Light gray:   #EAEAEA
     - Lighter gray: #F9F9F9
-    
+
 Please when using them type the name in a comment close to it
 so in case we have to substitute them all we can do a search.
 
@@ -177,6 +177,8 @@ header div {
     align-items: center;
     /*Align it horizontally*/
     justify-content: center;
+    /*Change the cursor the a hand*/
+    cursor: pointer;
 }
 
 /*Header button link text, basically set a nice color*/
