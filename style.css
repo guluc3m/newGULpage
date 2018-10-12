@@ -74,7 +74,9 @@ body {
     font-family: 'Lato', sans-serif;
     /*Set the background color to lighter gray*/
     background-size: cover;
-    background-color: #DDD;
+    background-color: #000;
+    /*
+    background-color: #DDD;*/
     /*Remove the default margins*/
     margin: 0%;
     /*Set a bigger font size by default*/
@@ -87,6 +89,17 @@ a {text-decoration: none;}
 /*Body padding so the left and right sections are not directly next to the borders*/
 .pad {height: 1em;}
 
+/*Canvas for the word rain*/
+canvas {
+    /*Make it follow the scrolling*/
+    position: fixed;
+    /*Other hacks copypasted from SO*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 
 /*###########################################
 ##                  HEADER                 ##
