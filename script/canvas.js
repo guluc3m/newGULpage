@@ -7,7 +7,7 @@ var FONT_COLOR = "#bbb";
 var canvas;
 var context;
 var ncolumns;
-var characters = "abcdefghijklmnñopqrstqvwxyz0123456789";
+var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 var columns = [];
 
 window.onload = function(){
@@ -31,7 +31,7 @@ function init(){
                         columns[x] = 1; //Initial y-position
                 }
         }else{ //Canvas unsupported code
-                console.log("Sorry, looks like your browser does not support canvas.");
+                console.log("Sorry, it looks like your browser does not support canvas.");
         }
 }
 
