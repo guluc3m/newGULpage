@@ -184,6 +184,10 @@ header div {
 
 /*Header buttons, with hover action too*/
 .header-button {
+    /*Make the button have the full height of the header*/
+    height: 100%;
+    /*Substitute that ugly blue link color*/
+    color: #222;
     /*Used for the next two lines*/
     display: flex;
     /*Align the paragraph vertically*/
