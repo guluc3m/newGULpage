@@ -7,7 +7,7 @@ var FONT_COLOR = "#bbb";
 var canvas;
 var context;
 var ncolumns;
-var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+var characters = "01";
 var columns = [];
 
 window.onload = function(){
@@ -18,7 +18,7 @@ window.onload = function(){
 
 /*This function initializes the canvas*/
 function init(){
-        if(canvas && canvas.getContext){ 
+        if(canvas && canvas.getContext){
                 context = canvas.getContext('2d');
                 //Setting canvas dimensions
                 canvas.width = window.innerWidth;

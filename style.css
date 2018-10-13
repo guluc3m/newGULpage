@@ -293,9 +293,8 @@ header div {
 /*Blue card*/
 .card-blue {
     /*Set the card color, border radius and display mode*/
-    background-color: #1C3144;
+    background-color: #666;
     color: #F9F9F9;
-    border: 0.5px inset #FFF;
     border-radius: 2px;
     display: inline-block;
     /*Full width of the section, although this can be changed individually*/
