@@ -167,9 +167,14 @@ header div {
     align-items: center;
     /*Align it horizontally*/
     align-items: center;
-
     /*Set a lighter color*/
     color: #666;
+}
+
+/*Hide the mottos if we are on mobile*/
+@media (max-width: 768px) {
+    /*Hide the header buttons*/
+    .header-motto {display: none;}
 }
 
 /*Header icons, but we can use this on other places too*/
@@ -201,6 +206,11 @@ header div {
     cursor: pointer;
 }
 
+/*Hide the buttons if we are on mobile*/
+@media (max-width: 768px) {
+    /*Hide the header buttons*/
+    .header-button {display: none;}
+}
 /*Header button link text, basically set a nice color*/
 .header-button a {
     text-decoration: none;
@@ -215,24 +225,20 @@ header div {
 ##                 SECTION                 ##
 ###########################################*/
 
-/*Set a top margin so it does not get under the header*/
-@media (min-width: 768px) {
-    .section {
-        margin-top: 100px;
-    }
-}
 
 .section {
     /*A bit of padding so the cards do not collide between them horizontally*/
     padding: 0.5em;
     /*A top margin so it does not collide with the header*/
-    margin-top: 1em;
-    /*Testing background
-    background-size: cover;
-    background-color: #F00;
-    height: 100em;*/
+    margin-top: 4em;
 }
 
+/*Set a top margin so it does not get under the header*/
+@media (max-width: 768px) {
+    .section {
+        margin-top: 0;
+    }
+}
 
 /*Card item, basic building block of the body*/
 .card {
