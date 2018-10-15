@@ -42,7 +42,7 @@ genius stuff works at https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 }
 
 /*With a width bigger than 768px we go to desktop mode*/
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
     [class*="col-"] {float: left;}
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -106,7 +106,7 @@ canvas {
 ###########################################*/
 
 /*If we are on mobile, do some stuff*/
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     /*Hide the header buttons*/
     .header-button {display: none;}
     /*Reduce the size of the header*/
@@ -116,9 +116,12 @@ canvas {
 }
 
 /*Set the header as a floating item only if we are in desktop mode*/
-@media only screen and (min-width: 768px) {
-    position: fixed;
-    top: 0px;
+@media (min-width: 768px) {
+    header {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+    }
 }
 
 /*Main header block. This sets the background color and the coverage of the header*/
@@ -152,7 +155,7 @@ header div {
 }
 
 /*Hide the motto if we are on mobile*/
-@media only screen and (max-width: 768px) {.header-motto p {display: none;}}
+@media (max-width: 768px) {.header-motto p {display: none;}}
 
 /*Nos gusta jugar con la tecnologia*/
 .header-motto p {
@@ -211,6 +214,13 @@ header div {
 /*###########################################
 ##                 SECTION                 ##
 ###########################################*/
+
+/*Set a top margin so it does not get under the header*/
+@media (min-width: 768px) {
+    .section {
+        margin-top: 100px;
+    }
+}
 
 .section {
     /*A bit of padding so the cards do not collide between them horizontally*/
