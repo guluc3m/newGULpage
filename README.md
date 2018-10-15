@@ -8,8 +8,11 @@
 ### TODO
 ```
 - Several media queries work, just check if there are any that still do not work :D
-- Fix titles
-- Make the GUL logo clickable to go to index
+- Foldable menu for mobile?
+- Fix the colors for the work groups
+- We should start filling the contents of the work group pages
+- Make the mailing list subscription form work
+- Add a Google captcha for the mailing list subscription form
 ```
 
 # The new GUL webpage
@@ -85,7 +88,7 @@ Almost everything in the page is based on cards. They are a simple way of orderi
  - card: black text on white background
  - card-dark: white text on black background
  - card-lighter: dark gray text on light gray background
- - card-blue: white text on GUL Blue background
+ - card-color: Depending on the page you are on, the background and text color vary.
 
 ## Shadows
 
