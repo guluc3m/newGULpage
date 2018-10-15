@@ -8,8 +8,8 @@
 ### TODO
 ```
 - Several media queries work, just check if there are any that still do not work :D
-- Fix links between pages
 - Fix titles
+- Make the GUL logo clickable to go to index
 ```
 
 # The new GUL webpage

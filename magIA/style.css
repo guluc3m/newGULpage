@@ -151,6 +151,7 @@ header div {
 .header-logo img {
     display: block;
     height: 3em;
+    margin-top: 0.5em;
     margin-left: 1em;
 }
 
@@ -309,8 +310,8 @@ header div {
 /*Green card*/
 .card-color {
     /*Set the card color, border radius and display mode*/
-    background-color: #00979D;
-    color: #FFF;
+    background-color: #77EBEF;
+    color: #111;
     border-radius: 2px;
     display: inline-block;
     /*Full width of the section, although this can be changed individually*/

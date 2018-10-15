@@ -1,1 +1,1 @@
-Root folder of the MagIA group.
+Root folder of the Android group.
