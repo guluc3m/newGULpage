@@ -7,8 +7,9 @@
 
 ### TODO
 ```
-- Media queries do not work :(
-- Colored cards
+- Several media queries work, just check if there are any that still do not work :D
+- Fix links between pages
+- Fix titles
 ```
 
 # The new GUL webpage

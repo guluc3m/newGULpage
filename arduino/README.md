@@ -1,1 +1,1 @@
-Root folder of the Arduino group.
+Root folder of the Android group.

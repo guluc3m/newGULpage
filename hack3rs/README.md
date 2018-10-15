@@ -1,1 +1,1 @@
-Root folder of the Hack3rs subpage.
+Root folder of the Android group.
