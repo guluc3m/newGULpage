@@ -78,8 +78,7 @@ The official GUL UC3M font for the logo and most of the printing is done with [L
 
 ## Color palette
 
-This is the color palette used in the whole page. You can find the hexadecimal values of each one at the beginning of [style.css](style.css)
-
+This is the color palette used in the whole page. You can find the hexadecimal values of each one at the beginning of [style.css](style.css). There are several of them which are workgroup specific and should not be used on other pages.
 ![GUL color palette image. From left to right: Hack3rs Red, Radio Blue, GUL Blue, Dark gray, GUL Gray, Light gray and Lighter gray](etc/gul_palette.png)
 
 ## Cards
