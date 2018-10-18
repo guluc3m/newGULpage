@@ -28,7 +28,7 @@ function init(){
                 //Setting text columns
                 ncolumns = canvas.width/FONT_SIZE;
                 for(var x = 0; x < ncolumns; x++){
-                        columns[x] = 1; //Initial y-position
+                        columns[x] = 100; //Initial y-position
                 }
         }else{ //Canvas unsupported code
                 console.log("Sorry, it looks like your browser does not support canvas.");
