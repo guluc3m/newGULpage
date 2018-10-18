@@ -13,11 +13,11 @@
                 <!--Set the title of the page so it shows it on the tab of the browser-->
                 <title>GUL UC3M | Inicio</title>
                 <!--Favicon stuff for desktop, mobile and other platforms-->
-                <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-                <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-                <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-                <link rel="manifest" href="../site.webmanifest">
-                <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+                <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+                <link rel="manifest" href="./site.webmanifest">
+                <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
                 <meta name="msapplication-TileColor" content="#da532c">
                 <meta name="theme-color" content="#1c3144">
         </head>
@@ -47,6 +47,19 @@
                         <a class="col-1 header-button" href="juegos/juegos.html">Juegos</a>
                         <a class="col-1 header-button" href="magIA/magIA.html">MagIA</a>
                         <a class="col-1 header-button" href="http://radio.gul.es">Radio</a>
+                        <!--Drop down menu for mobile version-->
+                        <ul class="menu">
+                              <!--Initial icon-->
+        				              <li><img class='menu-icon' src=./menu.png></li>
+                                <ul>
+                                  <!--Every group is listed in the menu-->
+                                  <li><a href="android/android.html">Android</a></li>
+                                  <li><a href="arduinos/arduinos.html">Arduinos</a></li>
+                                  <li><a href="hack3rs/hack3rs.html">Hack3rs</a></li>
+                                  <li><a href="juegos/juegos.html">Juegos</a></li>
+                                  <li><a href="magIA/magIA.html">MagIA</a></li>
+                                </ul>
+                        </ul>
                 </header>
                 <canvas id="words-rain"></canvas>
                 <!--Padding column so the content is not directly next to the border of the page-->

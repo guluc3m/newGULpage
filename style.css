@@ -122,6 +122,8 @@ canvas {
         top: 0px;
         width: 100%;
     }
+    /*Display the drop down menu only in mobile version*/
+    .menu{display: none;}
 }
 
 /*Main header block. This sets the background color and the coverage of the header*/
@@ -219,7 +221,41 @@ header div {
 
 /*Header button, change its color when hovering with the mouse*/
 .header-button:hover {background-color: #DDD;}
+/*
+ul, ol {
+  list-style:none;
+}
 
+.menu-icon{
+  display: content;
+  margin-left: auto;
+}
+*/
+/*Display groups when menu icon is clicked*//*
+.menu-icon:active{
+  display: block;
+}
+
+.menu a {
+	background-color:#EAEAEA;
+	color:#000;
+	text-decoration:none;
+	padding:5px 5px;
+	display:block;
+  width:100px;
+}
+
+.menu li{
+	display:none;
+	position:relative;
+	width:10px;
+  margin-left: 700px;
+}
+.menu li{
+	left:100px;
+	top:0px;
+}
+*/
 
 /*###########################################
 ##                 SECTION                 ##
