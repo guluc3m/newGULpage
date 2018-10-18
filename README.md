@@ -8,9 +8,7 @@
 ### TODO
 ```
 - Several media queries work, just check if there are any that still do not work :D
-- Foldable menu for mobile?
-- Fix the colors for the work groups
-- We should start filling the contents of the work group pages
+- Foldable menu for mobile
 - Make the mailing list subscription form work
 - Add a Google captcha for the mailing list subscription form
 ```
