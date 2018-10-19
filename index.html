@@ -94,8 +94,13 @@
                         <div class=card>
                                 <p>El <strong>Grupo de Usuarios de Linux</strong> es una asociación de estudiantes unidos por nuestras
                                 inquietudes en torno a los ordenadores, a la informática y, en concreto, la idea común de
+<<<<<<< HEAD
                                 la utilización y promoción del <strong>software libre</strong>.</p>
                                 <p>Nos reunimos los segundos viernes de cada mes para  aprender y compartir conocimientos, y tenemos
+=======
+                                la utilización y promoción del <b>software libre</b>.</p>
+                                <p>Nos reunimos el segundo viernes de cada mes para  aprender y compartir conocimientos, y tenemos
+>>>>>>> issue-6
                                 varios grupos de trabajo enfocados en distintos áreas de la informática y la tecnología:
                                 <a href="android/android.html"><strong>Android</strong></a>, <a href="arduinos/arduinos.html"><b>Arduinos</b></a>, <a href="hack3rs/hack3rs.html"><b>Hack3rs</b></a>,
                                 <a href="juegos/juegos.html"><strong>Juegos</strong></a>, <a href="magIA/magIA.html"><b>MagIA</b></a> y <a href="http://radio.gul.es"><b>Radio</b></a>.</p>
@@ -117,8 +122,16 @@
                             <p>Puedes apuntarte a la lista de correo para recibir avisos de reuniones y eventos, participar en discusiones
                             y preguntar dudas a nuestra comunidad:</p>
                             <div class=form>
-                                <p><input id=email type=email name=email value="" method=post action=https://gul.uc3m.es/mailman/subscribe/gul placeholder="Correo electrónico" text="Tu correo aquí"></p>
-                                <div class="col-12 card-lighter" style="text-align:center">Enviar</div>
+                                <form action="https://gul.uc3m.es/mailman/subscribe/gul" method="POST">
+                                    <label for="email">Escribe tu e-mail y empieza a enterarte de todo</label>
+                                    <input id="mail" type="email" name="email" value="" placeholder="E-mail">
+                                    <div id="captcha-button">
+                                        <div class="g-recaptcha" data-sitekey="nanananananananananananaBATMAN!" data-callback="checkCaptcha"></div>
+                                        <button id="button-submit" type="submit" name="button" disabled>Suscríbete</button>
+                                        <!--TODO: include google captcha api key (data-sitekey) when page is deployed-->
+                                        <!--For gul.es, key "6Lc3b1cUAAAAAMmEjzUXwP4rkh5f82XJb4mceeKN" is registered --> 
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -127,5 +140,7 @@
                 <div class="col-1 pad"></div>
                 <!--Words rain-->
                 <script src=script/canvas.js></script>
+                <!-- Google recatpcha -->
+                <script src='https://www.google.com/recaptcha/api.js'></script>
         </body>
 </html>
