@@ -123,7 +123,7 @@ canvas {
         width: 100%;
     }
     /*Display the drop down menu only in mobile version*/
-    .menu{display: none;}
+    .ddmenu{display: none;}
 }
 
 /*Main header block. This sets the background color and the coverage of the header*/
