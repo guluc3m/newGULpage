@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang=es>
         <head>
                 <!--Tag needed for tildes and other letters-->
@@ -28,6 +28,41 @@
                         <!--Logo part of the header, leftmost div-->
                         <div class="col-2 header-logo">
                                 <img alt="GUL UC3M Logo" src="img/logo_horizontal_gray.svg">
+                                <!--Drop down menu for mobile version-->
+                                <div class="dropDown">
+                                      <!--Initial icon-->
+                				              <button onclick='dropDown()' class='ddmenu'><img class='menu-icon' src=./menu.png></button>
+                                        <div id='dropDownMenu' class='dropDownContent'>
+                                          <!--Every group is listed in the menu-->
+                                          <a href="android/android.html">Android</a>
+                                          <a href="arduinos/arduinos.html">Arduinos</a>
+                                          <a href="hack3rs/hack3rs.html">Hack3rs</a>
+                                          <a href="juegos/juegos.html">Juegos</a>
+                                          <a href="magIA/magIA.html">MagIA</a>
+                                        </div>
+                                </div>
+                                <script>
+                                /* When the user clicks on the button,
+                                toggle between hiding and showing the dropdown content */
+                                function dropDown() {
+                                  document.getElementById("dropDownMenu").classList.toggle("show");
+                                }
+
+                                // Close the dropdown menu if the user clicks outside of it
+                                window.onclick = function(event) {
+                                  if (!event.target.matches('.ddmenu')) {
+
+                                    var dropdowns = document.getElementsByClassName("dropDownContent");
+                                    var i;
+                                    for (i = 0; i < dropdowns.length; i++) {
+                                      var openDropdown = dropdowns[i];
+                                      if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                      }
+                                    }
+                                  }
+                                }
+                                </script>
                         </div>
                         <!--Motto of the webpage-->
                         <div class="col-3 header-motto">
@@ -47,42 +82,6 @@
                         <a class="col-1 header-button" href="juegos/juegos.html">Juegos</a>
                         <a class="col-1 header-button" href="magIA/magIA.html">MagIA</a>
                         <a class="col-1 header-button" href="http://radio.gul.es">Radio</a>
-
-                        <!--Drop down menu for mobile version-->
-                        <div class="dropDown">
-                              <!--Initial icon-->
-        				              <button onclick='dropDown()' class='ddmenu'><img class='menu-icon' src=./menu.png></button>
-                                <div id='dropDownMenu' class='dropDownContent'>
-                                  <!--Every group is listed in the menu-->
-                                  <a href="android/android.html">Android</a>
-                                  <a href="arduinos/arduinos.html">Arduinos</a>
-                                  <a href="hack3rs/hack3rs.html">Hack3rs</a>
-                                  <a href="juegos/juegos.html">Juegos</a>
-                                  <a href="magIA/magIA.html">MagIA</a>
-                                </div>
-                        </div>
-                        <script>
-                        /* When the user clicks on the button,
-                        toggle between hiding and showing the dropdown content */
-                        function dropDown() {
-                          document.getElementById("dropDownMenu").classList.toggle("show");
-                        }
-
-                        // Close the dropdown menu if the user clicks outside of it
-                        window.onclick = function(event) {
-                          if (!event.target.matches('.ddmenu')) {
-
-                            var dropdowns = document.getElementsByClassName("dropDownContent");
-                            var i;
-                            for (i = 0; i < dropdowns.length; i++) {
-                              var openDropdown = dropdowns[i];
-                              if (openDropdown.classList.contains('show')) {
-                                openDropdown.classList.remove('show');
-                              }
-                            }
-                          }
-                        }
-                        </script>
 
                 </header>
                 <canvas id="words-rain"></canvas>

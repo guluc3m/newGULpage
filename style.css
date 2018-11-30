@@ -237,6 +237,8 @@ header div {
 .dropDown {
     position: relative;
     display: inline-block;
+    padding-left: 100px;
+    padding-top: 15px;
 }
 
 /* dropDown Content (Hidden by Default) */
