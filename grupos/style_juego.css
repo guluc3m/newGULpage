@@ -10,11 +10,8 @@
     - GUL Gray:     #666
     - Light gray:   #EAEAEA
     - Lighter gray: #F9F9F9
-
 Please when using them type the name in a comment close to it
 so in case we have to substitute them all we can do a search.
-
-
 /*General CSS rules for each item on the document, do not mistake with the previous one*/
 * {
     /*This bad boy right here allows us to set the absolute width of an element, including
@@ -146,7 +143,6 @@ header div {
 }
 
 /*The structure from here on is: 2 units for the logo, 4 for the motto, and 6 for buttons
-
 /*Holds the logo image in place*/
 .header-logo img {
     display: block;
@@ -310,8 +306,8 @@ header div {
 /*Green card*/
 .card-color {
     /*Set the card color, border radius and display mode*/
-    background-color: #591728;
-    color: #FFF;
+    background-color: #FFAE00;
+    color: #111;
     border-radius: 2px;
     display: inline-block;
     /*Full width of the section, although this can be changed individually*/
