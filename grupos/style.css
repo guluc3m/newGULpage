@@ -238,7 +238,7 @@ header div {
     position: absolute;
     background-color: #EAEAEA;
     min-width: 100%;
-    min-height: 230px;
+    min-height: 275px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -249,9 +249,12 @@ header div {
     text-decoration: none;
     display: block;
 }
-
+i
 /* Change color of dropDown links on hover */
 .dropDownContent a:hover {background-color: #666}
+
+/* Show the dropDown menu (use JS to add this class to the .dropDown-content container when the       user clicks on the dropDown button) */
+.show {display:block;}
 
 /*Header button, change its color when hovering with the mouse*/
 .header-button:hover {background-color: #DDD;}
@@ -266,13 +269,13 @@ header div {
     /*A bit of padding so the cards do not collide between them horizontally*/
     padding: 0.5em;
     /*A top margin so it does not collide with the header*/
-    margin-top: 4em;
+    margin-top: 90px;
 }
 
 /*Set a top margin so it does not get under the header*/
 @media (max-width: 768px) {
     .section {
-        margin-top: 0;
+        margin-top: 30px;
     }
 }
 
@@ -288,8 +291,8 @@ header div {
     /*A bit of content padding so it looks great*/
     padding: 1em;
     /*And vertical margin so cards in the same section do not collide*/
-    margin-top: 2em;
-    margin-bottom: 0.2em;
+    margin-top: 0em;
+    margin-bottom: 30px;
     /*Box shadow!*/
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
@@ -310,10 +313,8 @@ header div {
     /*A bit of content padding so it looks great*/
     padding: 0.5em 1em 0.5em 1em;
     /*And vertical margin so cards in the same section do not collide*/
-    margin-top: 2em;
-    margin-bottom: 0.2em;
-    /*Box shadow!*/
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-top: 0em;
+    margin-bottom: 30px;
     /*Set the text bigger*/
     font-size: 1.2em;
 }
@@ -333,10 +334,8 @@ header div {
     /*A bit of content padding so it looks great*/
     padding: 0.5em 1em 0.5em 1em;
     /*And vertical margin so cards in the same section do not collide*/
-    margin-top: 2em;
-    margin-bottom: 0.2em;
-    /*Box shadow!*/
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-top: 0em;
+    margin-bottom: 30px;
     /*Set the text bigger*/
     font-size: 1.2em;
 }
@@ -356,10 +355,8 @@ header div {
     /*A bit of content padding so it looks great*/
     padding: 0.5em 1em 0.5em 1em;
     /*And vertical margin so cards in the same section do not collide*/
-    margin-top: 2em;
-    margin-bottom: 0.2em;
-    /*Box shadow!*/
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-top: 0em;
+    margin-bottom: 30px;
     /*Set the text bigger*/
     font-size: 1.2em;
 }
