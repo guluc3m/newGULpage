@@ -23,31 +23,31 @@
         </head>
 
         <body>
-                <!--Desktop header with all the links. Hidden in mobile mode, full width in desktop mode-->
-                <header class=row>
-                        <!--Logo part of the header, leftmost div-->
-                        <div class="col-2 header-logo">
-                                <img alt="GUL UC3M Logo" src="img/logo_horizontal_gray.svg">
-                                <!--Drop down menu for mobile version-->
+            <!--Desktop header with all the links. Hidden in mobile mode, full width in desktop mode-->
+            <header class=row>
+                    <!--Logo part of the header, leftmost div-->
+                    <div class="col-2 header-logo">
+                            <img alt="GUL UC3M Logo" src="img/logo_horizontal_gray.svg">
+                            <!--Drop down menu for mobile version-->
                                 <div class="dropDown">
-                                      <!--Initial icon-->
-                				              <button onclick='dropDown()' class='ddmenu'><img class='menu-icon' src=./menu.png></button>
-                                        <div id='dropDownMenu' class='dropDownContent'>
-                                          <!--Every group is listed in the menu-->
-                                          <a href="grupos/grupos.html#android">Android</a>
-                                          <a href="grupos/grupos.html#arduino">Arduinos</a>
-                                          <a href="grupos/grupos.html#hack3rs">Hack3rs</a>
-                                          <a href="grupos/grupos.html#juegos">Juegos</a>
-                                          <a href="grupos/grupos.html#magIA">MagIA</a>
-                                          <a href="http://ragio.gul.es">Radio</a>
-                                        </div>
-                                </div>
-                                <script>
-                                /* When the user clicks on the button,
-                                toggle between hiding and showing the dropdown content */
-                                function dropDown() {
-                                  document.getElementById("dropDownMenu").classList.toggle("show");
-                                }
+                                  <!--Initial icon-->
+                                          <button onclick='dropDown()' class='ddmenu'><img class='menu-icon' src=./menu.png></button>
+                                    <div id='dropDownMenu' class='dropDownContent'>
+                                      <!--Every group is listed in the menu-->
+                                      <a href="grupos/grupos.html#android">Android</a>
+                                      <a href="grupos/grupos.html#arduino">Arduinos</a>
+                                      <a href="grupos/grupos.html#hack3rs">Hack3rs</a>
+                                      <a href="grupos/grupos.html#juegos">Juegos</a>
+                                      <a href="grupos/grupos.html#magIA">MagIA</a>
+                                      <a href="http://ragio.gul.es">Radio</a>
+                                    </div>
+                            </div>
+                            <script>
+                            /* When the user clicks on the button,
+                            toggle between hiding and showing the dropdown content */
+                            function dropDown() {
+                              document.getElementById("dropDownMenu").classList.toggle("show");
+                            }
 
                                 // Close the dropdown menu if the user clicks outside of it
                                 window.onclick = function(event) {
