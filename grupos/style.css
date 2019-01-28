@@ -161,8 +161,6 @@ header div {
     margin-left: 1em;
 }
 
-/*Hide the motto if we are on mobile*/
-@media (max-width: 768px) {.header-motto p {display: none;}}
 
 /*Nos gusta jugar con la tecnologia*/
 .header-motto p {
@@ -237,7 +235,7 @@ header div {
 /*Set a top margin so it does not get under the header*/
 @media (max-width: 768px) {
     .section {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 }
 
@@ -251,11 +249,9 @@ header div {
         border-radius: 2px;
         /*Full width of the section, although this can be changed individually*/
         width: 75%;
-        height: 100%;
         /*A bit of content padding so it looks great*/
         padding: 1em;
         /*And vertical margin so cards in the same section do not collide*/
-        margin-top: 0em;
         margin-bottom: 30px;
     }
     /*Set the link color to a lighter one so we can see it*/
@@ -271,11 +267,9 @@ header div {
         border-radius: 2px;
         /*Set the with of the adroid block to 25% so the text takes the remaining 75%*/
         width: 25%;
-        height: 100%;
         /*A bit of content padding so it looks great*/
         padding: 0.5em 1em 0.5em 1em;
         /*And vertical margin so cards in the same section do not collide*/
-        margin-top: 0em;
         margin-bottom: 30px;
         /*Set the text bigger*/
         font-size: 1.2em;
@@ -290,9 +284,7 @@ header div {
         color: #FFF;
         border-radius: 2px;
         width: 25%;
-        height: 100%;
         padding: 0.5em 1em 0.5em 1em;
-        margin-top: 0em;
         margin-bottom: 30px;
         font-size: 1.2em;
     }
@@ -305,9 +297,7 @@ header div {
         color: #111;
         border-radius: 2px;
         width: 25%;
-        height: 100%;
         padding: 0.5em 1em 0.5em 1em;
-        margin-top: 0em;
         margin-bottom: 30px;
         font-size: 1.2em;
     }
@@ -321,9 +311,7 @@ header div {
         color: #111;
         border-radius: 2px;
         width: 25%;
-        height: 100%;
         padding: 0.5em 1em 0.5em 1em;
-        margin-top: 0em;
         margin-bottom: 30px;
         font-size: 1.2em;
     }
@@ -337,9 +325,6 @@ header div {
         /*Set the card color, border radius and display mode*/
         background: #EAEAEA;
         border-radius: 2px;
-        /*Full width of the section, although this can be changed individually*/
-        width: 100%;
-        height: 75%;
         /*A bit of content padding so it looks great*/
         padding: 1em;
         /*And vertical margin so cards in the same section do not collide*/
@@ -358,12 +343,11 @@ header div {
          border-radius: 2px;
          /*Set the height of the adroid block to 25% so the text takes the remaining 75%*/
          width: 100%;
-         height: 25%;
+         height: 250px;
          /*A bit of content padding so it looks great*/
          padding: 0.5em 1em 0.5em 1em;
          /*And vertical margin so cards in the same section do not collide*/
-         margin-top: 0em;
-         margin-bottom: 30px;
+         margin-top: 30px;
          /*Set the text bigger*/
          font-size: 1.2em;
     }
@@ -376,10 +360,9 @@ header div {
          color: #FFF;
          border-radius: 2px;
          width: 100%;
-         height: 25%;
+         height: 250px;
          padding: 0.5em 1em 0.5em 1em;
-         margin-top: 0em;
-         margin-bottom: 30px;
+         margin-top: 30px;
          font-size: 1.2em;
     }   
     .hack3rs a {color: #EAEAEA;}
@@ -390,10 +373,9 @@ header div {
          color: #111;
          border-radius: 2px;
          width: 100%;
-         height: 25%;
+         height: 250px;
          padding: 0.5em 1em 0.5em 1em;
-         margin-top: 0em;
-         margin-bottom: 30px;
+         margin-top: 30px;
          font-size: 1.2em;
     }   
     .juego a {color: #EAEAEA;}
@@ -404,10 +386,9 @@ header div {
          color: #111;
          border-radius: 2px;
          width: 100%;
-         height: 25%;
+         height: 250px;
          padding: 0.5em 1em 0.5em 1em;
-         margin-top: 0em;
-         margin-bottom: 30px;
+         margin-top: 30px;
          font-size: 1.2em;
      }
      .magIA a {color: #EAEAEA;}
