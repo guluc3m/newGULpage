@@ -241,132 +241,179 @@ header div {
     }
 }
 
-/*Card item, basic building block of the body*/
-.card {
-    float: right;
-    /*Set the card color, border radius and display mode*/
-    background: #EAEAEA;
-    border-radius: 2px;
-    /*Full width of the section, although this can be changed individually*/
-    width: 75%;
-    height: 100%;
-    /*A bit of content padding so it looks great*/
-    padding: 1em;
-    /*And vertical margin so cards in the same section do not collide*/
-    margin-top: 0em;
-    margin-bottom: 30px;
-    /*Box shadow!*/
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+/*Design for desktop mode*/
+@media (min-width: 768px) {
+    /*Card item, basic building block of the body*/
+    .card {
+        float: right;
+        /*Set the card color, border radius and display mode*/
+        background: #EAEAEA;
+        border-radius: 2px;
+        /*Full width of the section, although this can be changed individually*/
+        width: 75%;
+        height: 100%;
+        /*A bit of content padding so it looks great*/
+        padding: 1em;
+        /*And vertical margin so cards in the same section do not collide*/
+        margin-top: 0em;
+        margin-bottom: 30px;
+    }
+    /*Set the link color to a lighter one so we can see it*/
+    .card a {color: #222;}    
+
+    /*Arduino section*/
+    .arduino {
+        /*Align it to the left so the text is in the right*/
+        float: left;
+        /*Set the card color, border radius and display mode*/
+        background-color: #00cccc;
+        color: #FFF;
+        border-radius: 2px;
+        /*Set the with of the adroid block to 25% so the text takes the remaining 75%*/
+        width: 25%;
+        height: 100%;
+        /*A bit of content padding so it looks great*/
+        padding: 0.5em 1em 0.5em 1em;
+        /*And vertical margin so cards in the same section do not collide*/
+        margin-top: 0em;
+        margin-bottom: 30px;
+        /*Set the text bigger*/
+        font-size: 1.2em;
+    }
+    /*Set the link color to a lighter one so we can see it*/
+    .arduino a {color: #EAEAEA;}
+
+    /*Hack3rs section*/
+    .hack3rs {
+        float: left;
+        background-color: #d0496a;
+        color: #FFF;
+        border-radius: 2px;
+        width: 25%;
+        height: 100%;
+        padding: 0.5em 1em 0.5em 1em;
+        margin-top: 0em;
+        margin-bottom: 30px;
+        font-size: 1.2em;
+    }
+    .hack3rs a {color: #EAEAEA;}
+
+    /*Juego section*/
+    .juego {
+        float: left;
+        background-color: #FFAE00;
+        color: #111;
+        border-radius: 2px;
+        width: 25%;
+        height: 100%;
+        padding: 0.5em 1em 0.5em 1em;
+        margin-top: 0em;
+        margin-bottom: 30px;
+        font-size: 1.2em;
+    }
+
+    .juego a {color: #EAEAEA;}
+
+    /*MagIA section*/
+    .magIA {
+        float: left;
+        background-color: #1bdee4;
+        color: #111;
+        border-radius: 2px;
+        width: 25%;
+        height: 100%;
+        padding: 0.5em 1em 0.5em 1em;
+        margin-top: 0em;
+        margin-bottom: 30px;
+        font-size: 1.2em;
+    }
+    .magIA a {color: #EAEAEA;}
 }
 
-/*Set the link color to a lighter one so we can see it*/
-.card a {color: #222;}
-
-/*Green card*/
-.android {
-    float: left;
-    /*Set the card color, border radius and display mode*/
-    background-color: #A5C736;
-    color: #111;
-    border-radius: 2px;
-    /*Full width of the section, although this can be changed individually*/
-    width: 25%;
-    height: 100%;
-    /*A bit of content padding so it looks great*/
-    padding: 0.5em 1em 0.5em 1em;
-    /*And vertical margin so cards in the same section do not collide*/
-    margin-top: 0em;
-    margin-bottom: 30px;
-    /*Set the text bigger*/
-    font-size: 1.2em;
+/*Design for mobile mode*/
+@media (max-width: 768px) {
+    /*Card item, basic building block of the body*/
+    .card {
+        /*Set the card color, border radius and display mode*/
+        background: #EAEAEA;
+        border-radius: 2px;
+        /*Full width of the section, although this can be changed individually*/
+        width: 100%;
+        height: 75%;
+        /*A bit of content padding so it looks great*/
+        padding: 1em;
+        /*And vertical margin so cards in the same section do not collide*/
+        margin-top: 0em;
+        margin-bottom: 30px;
+    }
+    /*Set the link color to a lighter one so we can see it*/
+    .card a {color: #222;}
+    
+    /*Arduino section*/
+    .arduino {
+         /*We want this block to be above the text*/
+         /*Set the card color, border radius and display mode*/
+         background-color: #00cccc;
+         color: #FFF;
+         border-radius: 2px;
+         /*Set the height of the adroid block to 25% so the text takes the remaining 75%*/
+         width: 100%;
+         height: 25%;
+         /*A bit of content padding so it looks great*/
+         padding: 0.5em 1em 0.5em 1em;
+         /*And vertical margin so cards in the same section do not collide*/
+         margin-top: 0em;
+         margin-bottom: 30px;
+         /*Set the text bigger*/
+         font-size: 1.2em;
+    }
+    /*Set the link color to a lighter one so we can see it*/
+    .arduino a {color: #EAEAEA;}
+ 
+    /*Hack3rs section*/
+    .hack3rs {
+         background-color: #d0496a;
+         color: #FFF;
+         border-radius: 2px;
+         width: 100%;
+         height: 25%;
+         padding: 0.5em 1em 0.5em 1em;
+         margin-top: 0em;
+         margin-bottom: 30px;
+         font-size: 1.2em;
+    }   
+    .hack3rs a {color: #EAEAEA;}
+ 
+    /*Juego section*/
+    .juego {
+         background-color: #FFAE00;
+         color: #111;
+         border-radius: 2px;
+         width: 100%;
+         height: 25%;
+         padding: 0.5em 1em 0.5em 1em;
+         margin-top: 0em;
+         margin-bottom: 30px;
+         font-size: 1.2em;
+    }   
+    .juego a {color: #EAEAEA;}
+    
+    /*MagIA section*/
+    .magIA {
+         background-color: #1bdee4;
+         color: #111;
+         border-radius: 2px;
+         width: 100%;
+         height: 25%;
+         padding: 0.5em 1em 0.5em 1em;
+         margin-top: 0em;
+         margin-bottom: 30px;
+         font-size: 1.2em;
+     }
+     .magIA a {color: #EAEAEA;}
 }
 
-/*Set the link color to a lighter one so we can see it*/
-.android a {color: #EAEAEA;}
-
-.arduino {
-    float: left;
-    /*Set the card color, border radius and display mode*/
-    background-color: #00cccc;
-    color: #FFF;
-    border-radius: 2px;
-    /*Full width of the section, although this can be changed individually*/
-    width: 25%;
-    height: 100%;
-    /*A bit of content padding so it looks great*/
-    padding: 0.5em 1em 0.5em 1em;
-    /*And vertical margin so cards in the same section do not collide*/
-    margin-top: 0em;
-    margin-bottom: 30px;
-    /*Set the text bigger*/
-    font-size: 1.2em;
-}
-
-/*Set the link color to a lighter one so we can see it*/
-.arduino a {color: #EAEAEA;}
-
-.hack3rs {
-    float: left;
-    /*Set the card color, border radius and display mode*/
-    background-color: #d0496a;
-    color: #FFF;
-    border-radius: 2px;
-    /*Full width of the section, although this can be changed individually*/
-    width: 25%;
-    height: 100%;
-    /*A bit of content padding so it looks great*/
-    padding: 0.5em 1em 0.5em 1em;
-    /*And vertical margin so cards in the same section do not collide*/
-    margin-top: 0em;
-    margin-bottom: 30px;
-    /*Set the text bigger*/
-    font-size: 1.2em;
-}
-/*Set the link color to a lighter one so we can see it*/
-.hack3rs a {color: #EAEAEA;}
-
-.juego {
-    float: left;
-    /*Set the card color, border radius and display mode*/
-    background-color: #FFAE00;
-    color: #111;
-    border-radius: 2px;
-    /*Full width of the section, although this can be changed individually*/
-    width: 25%;
-    height: 100%;
-    /*A bit of content padding so it looks great*/
-    padding: 0.5em 1em 0.5em 1em;
-    /*And vertical margin so cards in the same section do not collide*/
-    margin-top: 0em;
-    margin-bottom: 30px;
-    /*Set the text bigger*/
-    font-size: 1.2em;
-}
-
-/*Set the link color to a lighter one so we can see it*/
-.juego a {color: #EAEAEA;}
-
-.magIA {
-    float: left;
-    /*Set the card color, border radius and display mode*/
-    background-color: #1bdee4;
-    color: #111;
-    border-radius: 2px;
-    /*Full width of the section, although this can be changed individually*/
-    width: 25%;
-    height: 100%;
-    /*A bit of content padding so it looks great*/
-    padding: 0.5em 1em 0.5em 1em;
-    /*And vertical margin so cards in the same section do not collide*/
-    margin-top: 0em;
-    margin-bottom: 30px;
-    /*Set the text bigger*/
-    font-size: 1.2em;
-}
-
-/*Set the link color to a lighter one so we can see it*/
-.magIA a {color: #EAEAEA;}
-
+    
 /*Text that is inside a p is a bit bigger, so we use text that is not inside the p
 as headers*/
 .card p {
@@ -382,10 +429,4 @@ h2 {font-weight: lighter;}
 h3 {
     font-weight: lighter;
     margin: 0.3em 0 0.3em 0;
-}
-
-/*Input form to enter the email address for the mailing list*/
-input {
-    width: 100%;
-    height: 3em;
 }

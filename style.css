@@ -247,7 +247,8 @@ header div {
     position: absolute;
     background-color: #EAEAEA;
     min-width: 100%;
-    min-height: 275px;
+    min-height: 230px;
+    right: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -255,12 +256,13 @@ header div {
 .dropDownContent a {
     color: black;
     padding: 12px 16px;
+    margin-right: 10px;
     text-decoration: none;
     display: block;
 }
 
 /* Change color of dropDown links on hover */
-.dropDownContent a:hover {background-color: #666}
+.dropDownContent a:hover {background-color: #bfbfbf}
 
 /* Show the dropDown menu (use JS to add this class to the .dropDown-content container when the user clicks on the dropDown button) */
 .show {display:block;}
