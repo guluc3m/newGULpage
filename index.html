@@ -20,6 +20,8 @@
         <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#1c3144">
+		<!--Google Recaptcha script-->
+		<script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body>
         <!--Desktop header with all the links. Hidden in mobile mode, full width in desktop mode-->
@@ -135,8 +137,12 @@
                 y preguntar dudas a nuestra comunidad:</p>
                 <div class=form>
                     <p><input id=email type=email name=email value="" method=post action=https://gul.uc3m.es/mailman/subscribe/gul placeholder="Correo electrónico" text="Tu correo aquí"></p>
-                    <div class="col-12 card-lighter" style="text-align:center">Enviar</div>
-                </div>
+					<!--<div class="col-12 card-lighter" style="text-align:center">Enviar</div>-->
+					<div id="captcha-button">
+						<div class="g-recaptcha" data-sitekey="6Lc3b1cUAAAAAMmEjzUXwP4rkh5f82XJb4mceeKN" data-callback="checkCaptcha"></div>
+						<button class="col-12 card-lighter" id="button-submit" type="submit" name="button" disabled>Suscríbete</button>
+					</div>
+		        </div>
             </div>
         </div>
     </div>
