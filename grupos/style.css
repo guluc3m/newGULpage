@@ -235,7 +235,7 @@ header div {
 /*Set a top margin so it does not get under the header*/
 @media (max-width: 768px) {
     .section {
-        margin-top: 10px;
+        margin-top: -100px;
     }
 }
 
@@ -267,6 +267,7 @@ header div {
         border-radius: 2px;
         /*Set the with of the adroid block to 25% so the text takes the remaining 75%*/
         width: 25%;
+        height: 311px;
         /*A bit of content padding so it looks great*/
         padding: 0.5em 1em 0.5em 1em;
         /*And vertical margin so cards in the same section do not collide*/
@@ -284,6 +285,7 @@ header div {
         color: #FFF;
         border-radius: 2px;
         width: 25%;
+        height: 294px;
         padding: 0.5em 1em 0.5em 1em;
         margin-bottom: 30px;
         font-size: 1.2em;
@@ -297,6 +299,7 @@ header div {
         color: #111;
         border-radius: 2px;
         width: 25%;
+        height: 293px;
         padding: 0.5em 1em 0.5em 1em;
         margin-bottom: 30px;
         font-size: 1.2em;
@@ -311,6 +314,7 @@ header div {
         color: #111;
         border-radius: 2px;
         width: 25%;
+        height: 268px;
         padding: 0.5em 1em 0.5em 1em;
         margin-bottom: 30px;
         font-size: 1.2em;
