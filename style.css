@@ -108,7 +108,7 @@ canvas {
 /*If we are on mobile, do some stuff*/
 @media (max-width: 768px) {
     /*Hide the header buttons*/
-    .header-button {display: none;}
+    /*.header-button {display: none;}
     /*Reduce the size of the header*/
     header {height: 3em;}
     /*And reduce the size of the logo so it fits*/
@@ -157,7 +157,7 @@ header div {
 }
 
 /*Hide the motto if we are on mobile*/
-@media (max-width: 768px) {.header-motto p {display: none;}}
+@media (max-width: 768px) {.header-motto p {display: block;}}*/
 
 /*Nos gusta jugar con la tecnologia*/
 .header-motto p {

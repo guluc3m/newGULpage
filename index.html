@@ -27,64 +27,31 @@
         <!--Desktop header with all the links. Hidden in mobile mode, full width in desktop mode-->
         <header class=row>
             <!--Logo part of the header, leftmost div-->
-            <div class="col-2 header-logo">
+            <div class="col-12 header-logo">
                 <img alt="GUL UC3M Logo" src="img/logo_horizontal_gray.svg">
-                <!--Drop down menu for mobile version-->
-                <div class="dropDown">
-                    <!--Initial icon-->
-                    <button onclick='dropDown()' class='ddmenu' style="Zindex: 100000;" ><img class='menu-icon' src=./menu.png></button>
-                    <div id='dropDownMenu' class='dropDownContent' style="Zindex: 100000;">
-                        <!--Every group is listed in the menu-->
-                        <!--<a href="grupos/grupos.html#arduino">Arduinos</a>
-                        <a href="grupos/grupos.html#hack3rs">Hack3rs</a>
-                        <a href="grupos/grupos.html#juegos">Juegos</a>
-                        <a href="grupos/grupos.html#magIA">MagIA</a>-->
-                        <a href="http://ragio.gul.es">Radio</a>
-                    </div>
-                </div>
-                <script>
-                    /* When the user clicks on the button,
-                    toggle between hiding and showing the dropdown content */
-                    function dropDown() {
-                        document.getElementById("dropDownMenu").classList.toggle("show");
-                    }
-                    // Close the dropdown menu if the user clicks outside of it
-                    window.onclick = function(event) {
-                        if (!event.target.matches('.ddmenu')) {
-                            var dropdowns = document.getElementsByClassName("dropDownContent");
-                            var i;
-                            for (i = 0; i < dropdowns.length; i++) {
-                                var openDropdown = dropdowns[i];
-                                if (openDropdown.classList.contains('show')) {
-                                    openDropdown.classList.remove('show');
-                                }
-                            }
-                        }
-                    }
-                </script>
-            </div>
-            <!--Motto of the webpage-->
+             <!--Empty button to be used as padding
+            <div class="col-1 header-motto"></div>
+            <div class="col-1 header-motto"></div>
+            <div class="col-1 header-motto"></div>
+            <div class="col-1 header-motto"></div>
+            <div class="col-1 header-motto"></div>
+            <div class="col-1 header-motto"></div>-->
+              <!--Motto of the webpage-->
             <div class="col-3 header-motto">
                 <!--Every link is opened in a new tab (except GUL groups)-->
                 <a href="https://twitter.com/guluc3m" target="_blank"><img alt=Twitter class=icon src=img/icons/twitter.svg></a>
                 <a href="https://www.instagram.com/guluc3m/" target="_blank"><img alt=Instagram class=icon src=img/icons/instagram.svg></a>
-                <a href="https://github.com/guluc3m" target="_blank"><img alt=GitHub class=icon src=img/icons/github.svg></a>
-                <a href="https://cursos.gul.es/" target="_blank"><img alt=Cursos class=icon src=img/icons/graduation-cap.svg></a>
-                <a href="https://jamon.gul.es/" target="_blank"><img alt=GULJamon class=icon src=img/icons/guljamon.png></a>
-            </div>
-            <!--Empty button to be used as padding-->
-            <div class="col-1 header-motto"></div>
-            <div class="col-1 header-motto"></div>
-            <div class="col-1 header-motto"></div>
-            <div class="col-1 header-motto"></div>
-            <div class="col-1 header-motto"></div>
-            <div class="col-1 header-motto"></div>
-            <!--Links to other main pages
+                <a href="https://github.com/guluc3m" target="_blank"><img alt="GitHub" class=icon src=img/icons/github.svg></a>
+                <a href="https://cursos.gul.es/" target="_blank"><img alt="Cursos" class=icon src=img/icons/graduation-cap.svg></a>
+                <a href="https://jamon.gul.es/" target="_blank"><img alt="GULJamon" class=icon src=img/icons/ham.svg></a>
+                <a href="http://radio.gul.es/" target="_blank"><img alt="Radio GUL" class=icon src=img/icons/radio.svg></a>
+             </div>
+           <!--Links to other main pages
             <a class="col-1 header-button" href="grupos/grupos.html#arduino">Arduinos</a>
             <a class="col-1 header-button" href="grupos/grupos.html#hack3rs">Hack3rs</a>
             <a class="col-1 header-button" href="grupos/grupos.html#juegos">Juegos</a>
-            <a class="col-1 header-button" href="grupos/grupos.html#magIA">MagIA</a>-->
-            <a class="col-1 header-button" href="http://radio.gul.es">Radio GUL</a>
+            <a class="col-1 header-button" href="grupos/grupos.html#magIA">MagIA</a>
+            <a class="col-1 header-button" href="http://radio.gul.es">Radio GUL</a>-->
         </header>
 
         <canvas id="words-rain"></canvas>
