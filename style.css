@@ -156,27 +156,14 @@ header div {
     margin-left: 1em;
 }
 
-/*Hide the motto if we are on mobile*/
-@media (max-width: 768px) {.header-motto p {display: block;}}*/
-
-/*Nos gusta jugar con la tecnologia*/
-.header-motto p {
-    /*Set a smaller font size*/
-    font-size: 0.8em;
-    /*Used for the next two lines*/
-    display: flex;
-    /*Align the paragraph vertically*/
-    align-items: center;
-    /*Align it horizontally*/
-    align-items: center;
-    /*Set a lighter color*/
-    color: #666;
-}
-
-/*Hide the mottos if we are on mobile*/
-@media (max-width: 768px) {
-    /*Hide the header buttons*/
-    .header-motto {display: none;}
+/*Show the motto if the page is smaller than 460px*/
+@media (min-width: 461px) {
+    .header-motto {
+        display: none;
+    }
+    .header-logo{
+        height: 6em;
+    }
 }
 
 /*Header icons, but we can use this on other places too*/
