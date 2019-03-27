@@ -2,7 +2,6 @@
 <html lang=es>
     <head>
         <!--Tag needed for tildes and other letters-->
-        <meta charset="UTF-8">
         <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
         <!--Tag needed to make the webpage responsive, see https://www.w3schools.com/css/css_rwd_viewport.asp for details-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,98 +24,100 @@
     </head>
     <body>
         <!--Desktop header with all the links. Hidden in mobile mode, full width in desktop mode-->
-        <header class=row>
+        <header class="row">
             <!--Logo part of the header, leftmost div-->
             <div class="col-4 header-logo">
                 <img alt="GUL UC3M Logo" src="static/images/logo_horizontal_gray.svg">
-             <!--Empty button to be used as padding
-            <div class="col-1 header-motto"></div>
-            <div class="col-1 header-motto"></div>
-            <div class="col-1 header-motto"></div>
-            <div class="col-1 header-motto"></div>
-            <div class="col-1 header-motto"></div>
-            <div class="col-1 header-motto"></div>-->
-           <!-- <div class="col-8 header-motto">
-                <p>Nos gusta jugar con la tecnología</p>
-            </div>-->
-            <!--Link icons-->
-            <div class="col-12">
-                <!--Every link is opened in a new tab (except GUL groups)-->
-                <a href="https://twitter.com/guluc3m" target="_blank"><img alt=Twitter class=icon src=static/images/icon/twitter.svg></a>
-                <a href="https://github.com/guluc3m" target="_blank"><img alt="GitHub" class=icon src=static/images/icon/github.svg></a>
-                <a href="https://cursos.gul.es/" target="_blank"><img alt="Cursos" class=icon src=static/images/icon/graduation-cap.svg></a>
-                <a href="http://jamon.gul.es/" target="_blank"><img alt="GULJamon" class=icon src=static/images/icon/ham.svg></a>
-                <a href="http://radio.gul.es/" target="_blank"><img alt="Radio GUL" class=icon src=static/images/icon/radio.svg></a>
-             </div>
-           <!--Links to other main pages
-            <a class="col-1 header-button" href="grupos/grupos.html#arduino">Arduinos</a>
-            <a class="col-1 header-button" href="grupos/grupos.html#hack3rs">Hack3rs</a>
-            <a class="col-1 header-button" href="grupos/grupos.html#juegos">Juegos</a>
-            <a class="col-1 header-button" href="grupos/grupos.html#magIA">MagIA</a>
-            <a class="col-1 header-button" href="http://radio.gul.es">Radio GUL</a>-->
+                 <!--Empty button to be used as padding
+                <div class="col-1 header-motto"></div>
+                <div class="col-1 header-motto"></div>
+                <div class="col-1 header-motto"></div>
+                <div class="col-1 header-motto"></div>
+                <div class="col-1 header-motto"></div>
+                <div class="col-1 header-motto"></div>-->
+               <!-- <div class="col-8 header-motto">
+                    <p>Nos gusta jugar con la tecnología</p>
+                </div>-->
+                <!--Link icons-->
+                <div class="col-12">
+                    <!--Every link is opened in a new tab (except GUL groups)-->
+                    <a href="https://twitter.com/guluc3m" target="_blank"><img alt=Twitter class="icon" src="static/images/icon/twitter.svg"></a>
+                    <a href="https://github.com/guluc3m" target="_blank"><img alt="GitHub" class="icon" src="static/images/icon/github.svg"></a>
+                    <a href="https://cursos.gul.es/" target="_blank"><img alt="Cursos" class="icon" src="static/images/icon/graduation-cap.svg"></a>
+                    <a href="http://jamon.gul.es/" target="_blank"><img alt="GULJamon" class="icon" src="static/images/icon/ham.svg"></a>
+                    <a href="http://radio.gul.es/" target="_blank"><img alt="Radio GUL" class="icon" src="static/images/icon/radio.svg"></a>
+                </div>
+               <!--Links to other main pages
+                <a class="col-1 header-button" href="grupos/grupos.html#arduino">Arduinos</a>
+                <a class="col-1 header-button" href="grupos/grupos.html#hack3rs">Hack3rs</a>
+                <a class="col-1 header-button" href="grupos/grupos.html#juegos">Juegos</a>
+                <a class="col-1 header-button" href="grupos/grupos.html#magIA">MagIA</a>
+                <a class="col-1 header-button" href="http://radio.gul.es">Radio GUL</a>-->
+            </div>
         </header>
 
         <canvas id="words-rain"></canvas>
+        <main>
+            <section class="col-4">
+                <div class="card-blue col-12"><h3>Horarios</h3></div>
+                <div class="card">
+                    <p><strong>Reunión mensual</strong>: Segundo viernes de cada mes a las 19h</p>
+                    <p><a href="grupos/grupos.html#juegos"><strong>Juegos</strong></a>: Jueves de 19 a 21h semanalmente</p>
+                    <iframe id="calendar" src="https://calendar.google.com/calendar/embed?src=uc3m.es_vhbqbqmnuc590jsvbr0hh7kj64%40group.calendar.google.com&ctz=Europe%2FMadrid"></iframe>
+                    <a href="https://calendar.google.com/calendar/embed?src=uc3m.es_vhbqbqmnuc590jsvbr0hh7kj64%40group.calendar.google.com&ctz=Europe%2FMadrid">
+                        <div class="card-lighter col-12" style="text-align:center">Ver calendario completo</div>
+                    </a>
+                </div>
+                <div class="card-blue col-12"><h3>Localización</h3></div>
+                <div class="card">
+                    <p>Despacho 2.3.C05, edificio Sabatini, Universidad Carlos III, Leganés.</p>
+                    <a href="https://goo.gl/maps/EfZch2z85uH2" target="_blank">
+                        <div class="card-lighter col-12" style="text-align:center">Consultar en el mapa</div>
+                    </a>
+                </div>
+            </section>
+            <!--Right wide column of the right, with other stuff-->
+            <section class="col-6">
+                <!--General info about the group-->
+                <div class="card-blue col-12"><h2>¿Qué es el GUL?</h2></div>
+                <div class="card">
+                    <p>El <strong>Grupo de Usuarios de Linux</strong> es una asociación de estudiantes unidos por nuestras
+                        inquietudes en torno a los ordenadores, a la informática y, en concreto, la idea común de
+                        la utilización y promoción del <strong>software libre</strong>.</p>
+                    <p>Nos reunimos los segundos viernes de cada mes para  aprender y compartir conocimientos, y tenemos
+                        algunos grupos de trabajo enfocados en distintos áreas de la informática y la tecnología, como
+                        <a href="grupos/grupos.html#juegos"><strong>Juegos</strong></a> y <a href="http://radio.gul.es"><b>Radio</b></a>.</p>
+                </div>
+                <!--Contact information-->
+                <div class="card-blue col-12"><h3>Contacto</h3></div>
+                <div class="card"><p>Puedes entrar en contacto con nosotros vía correo electrónico o a través de una de nuestras redes sociales:</p>
+                    <div class="row">
+                        <!--Twitter and button-->
+                        <a href="mailto:info@gul.uc3m.es" target="_blank"><div class="col-12 card-lighter" style="text-align:center">info@gul.uc3m.es</div></a>
+                        <a href="https://twitter.com/guluc3m" target="_blank"><div class="col-12 card-lighter" style="text-align:center">Twitter</div></a>
+                    </div>
+                </div>
+                <!--Email address form for mailing list-->
+                <div class="card-blue col-12"><h3>Lista de correo</h3></div>
+                <div class="card">
+                    <p>Puedes apuntarte a la lista de correo para recibir avisos de reuniones y eventos, participar en discusiones
+                        y preguntar dudas a nuestra comunidad:</p>
+                    <div class=form>
+                        <p><input id=email type=email name=email value="" method=post action=https://gul.uc3m.es/mailman/subscribe/gul placeholder="Correo electrónico" text="Tu correo aquí"></p>
+                        <!--<div class="col-12 card-lighter col-6" style="text-align:center">Enviar</div>-->
+                        <div id="captcha-button">
+                            <div class="g-recaptcha" style="margin: 0 auto; display: table" data-sitekey="6Lc3b1cUAAAAAMmEjzUXwP4rkh5f82XJb4mceeKN" data-callback="checkCaptcha"></div>
+                            <button class="col-12 card-lighter" id="button-submit" type="submit" name="button" disabled>Suscríbete</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--Left section of the document, with timetables and contact info-->
+
         <!--Padding column so the content is not directly next to the border of the page-->
         <div class="col-1 pad"></div>
-
-        <!--Left section of the document, with timetables and contact info-->
-        <div class="col-4 section">
-            <div class="card-blue">Horarios</div>
-            <div class=card>
-                <p><strong>Reunión mensual</strong>: Segundo viernes de cada mes a las 19h</p>
-                <p><a href="grupos/grupos.html#juegos"><strong>Juegos</strong></a>: Jueves de 19 a 21h semanalmente</p>
-                <iframe src="https://calendar.google.com/calendar/embed?src=uc3m.es_vhbqbqmnuc590jsvbr0hh7kj64%40group.calendar.google.com&ctz=Europe%2FMadrid" style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
-                <a href="https://calendar.google.com/calendar/embed?src=uc3m.es_vhbqbqmnuc590jsvbr0hh7kj64%40group.calendar.google.com&ctz=Europe%2FMadrid">
-                <div class=card-lighter style="text-align:center">Ver calendario completo</div></a>
-            </div>
-            <div class="card-blue">Localización</div>
-            <div class=card>
-                <p>Despacho 2.3.C05, edificio Sabatini, Universidad Carlos III, Leganés.</p>
-                <a href="https://goo.gl/maps/EfZch2z85uH2" target="_blank">
-                <div class=card-lighter style="text-align:center">Consultar en el mapa</div></a>
-            </div>
-        </div>
-        <!--Right wide column of the right, with other stuff-->
-        <div class="col-6 section">
-            <!--General info about the group-->
-            <div class="card-blue"><h2>¿Qué es el GUL?</h2></div>
-            <div class=card>
-                <p>El <strong>Grupo de Usuarios de Linux</strong> es una asociación de estudiantes unidos por nuestras
-                inquietudes en torno a los ordenadores, a la informática y, en concreto, la idea común de
-                la utilización y promoción del <strong>software libre</strong>.</p>
-                <p>Nos reunimos los segundos viernes de cada mes para  aprender y compartir conocimientos, y tenemos
-                algunos grupos de trabajo enfocados en distintos áreas de la informática y la tecnología, como
-                <a href="grupos/grupos.html#juegos"><strong>Juegos</strong></a> y <a href="http://radio.gul.es"><b>Radio</b></a>.</p>
-            </div>
-            <!--Contact information-->
-            <div class="card-blue"><h3>Contacto</h3></div>
-            <div class=card><p>Puedes entrar en contacto con nosotros vía correo electrónico o a través de una de nuestras redes sociales:</p>
-                <div class=row>
-                    <!--Twitter and button-->
-                    <a href="mailto:info@gul.uc3m.es" target="_blank"><div class="col-6 card-lighter" style="text-align:center">info@gul.uc3m.es</div></a>
-                    <a href="https://twitter.com/guluc3m" target="_blank"><div class="col-6 card-lighter" style="text-align:center">Twitter</div></a>
-                </div>
-            </div>
-            <!--Email address form for mailing list-->
-            <div class=card-blue>Lista de correo</div>
-            <div class=card>
-                <p>Puedes apuntarte a la lista de correo para recibir avisos de reuniones y eventos, participar en discusiones
-                y preguntar dudas a nuestra comunidad:</p>
-                <div class=form>
-                    <p><input id=email type=email name=email value="" method=post action=https://gul.uc3m.es/mailman/subscribe/gul placeholder="Correo electrónico" text="Tu correo aquí"></p>
-					<!--<div class="col-12 card-lighter" style="text-align:center">Enviar</div>-->
-					<div id="captcha-button">
-						<div class="g-recaptcha" style="margin: 0 auto; display: table" data-sitekey="6Lc3b1cUAAAAAMmEjzUXwP4rkh5f82XJb4mceeKN" data-callback="checkCaptcha"></div>
-						<button class="col-12 card-lighter" id="button-submit" type="submit" name="button" disabled>Suscríbete</button>
-					</div>
-		        </div>
-            </div>
-        </div>
-    </div>
-    <!--Padding column so the content is not directly next to the border of the page-->
-        <div class="col-1 pad"></div>
-        <div class=card style="text-align: center; background-color: rgb(0, 0, 0, 0); color: #DDD; font-size: 0.75em">
+        <div class="card" style="text-align: center; background-color: rgb(0, 0, 0, 0); color: #DDD; font-size: 0.75em">
             <p>El Grupo de Usuarios de Linux de la Universidad Carlos III de Madrid es una asociación declarada de beneficio social por el Ministerio de Hacienda.</p>
             <p>Domicilio social: despacho 2.3C05 del edificio Sabatini, Avenida de la Universidad, 30 28911 Leganés Madrid, España.</p>
             <p>C.I.F.: G83296988</p>
@@ -124,6 +125,6 @@
             <p>Número de registro del ayuntamiento de Leganés: 795</p>
         </div>
         <!--Words rain-->
-        <script src=static/script/canvas.js></script>
+        <script src="static/script/canvas.js"></script>
     </body>
 </html>
