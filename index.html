@@ -104,14 +104,16 @@
                 <p>Puedes apuntarte a la lista de correo para recibir avisos de reuniones y eventos, participar en discusiones
                 y preguntar dudas a nuestra comunidad:</p>
                 <div class=form>
-                    <p><input id=email type=email name=email value="" method="POST" action=https://gul.uc3m.es/mailman/subscribe/gul placeholder="Correo electrónico" text="Tu correo aquí"></p>
+		    <form method="POST" action=https://gul.uc3m.es/mailman/subscribe/gul>
+                    <p><input id=email type=email name=email value="" placeholder="Correo electrónico" text="Tu correo aquí"></p>
 					<!--<div class="col-12 card-lighter" style="text-align:center">Enviar</div>-->
 					<div id="captcha-button">
 						<div class="g-recaptcha" style="margin: 0 auto; display: table" data-sitekey="6Lc3b1cUAAAAAMmEjzUXwP4rkh5f82XJb4mceeKN" data-callback="checkCaptcha"></div>
-						<button class="col-12 card-lighter" id="button-submit" type="submit" name="button">Suscríbete</button>
+						<button class="col-12 card-lighter" id="button-submit" type="submit" name="button" disabled>Suscríbete</button>
 					</div>
 		        </div>
-            </div>
+                </form>
+	    </div>
         </div>
     </div>
     <!--Padding column so the content is not directly next to the border of the page-->
